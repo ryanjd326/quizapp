@@ -1,0 +1,9 @@
+<h1>Enter Your Dog Details</h1>
+<%= simple_form_for @dog do |f| %>
+  <% f.input :name %>
+  <% f.input :age %>
+  <% f.input :breed %>
+  <% f.input :description %>
+  <br />
+  <% f.submit 'Add', class: 'btn btn-primary' %>
+<% end %>
